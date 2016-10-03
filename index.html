@@ -34,6 +34,13 @@
       margin: auto;
       min-height:200px;
   }
+  body{
+    background-color: black;
+
+    }
+  .container{
+    background-color:black;
+  }
 
   /* Hide the carousel text when the screen is less than 600 pixels wide */
   @media (max-width: 600px) {
@@ -43,6 +50,11 @@
       line-height: 40px;
       font-weight: 40px; 
     }
+  }
+  .footer{
+    /*background-color:#ffa31a;*/
+    background-color:#cc9900;
+    color:white;
   }
   </style>
 </head>
@@ -72,14 +84,16 @@
     </div>
   </div>
 </nav>
-<div class="row">
-<div class="col-md-10">
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
     <!-- Wrapper for slides -->
@@ -104,7 +118,7 @@
         </div>      
       </div>
       <div class="item">
-        <img src="5[1].jpg" class="sample1" alt="Image">
+        <img src="pics srm/abc.jpg" class="sample1" alt="Image">
         <div class="carousel-caption">
           <h3>DURGA PUJA</h3>
         </div>      
@@ -120,29 +134,12 @@
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-</div>
-  <div class="col-md-2">
-<div class="panel panel-default">
-                    <div class="panel-heading"> "UPCOMING FESTIVALS AND EVENTS" </div>
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-9">
-                                DIWALI<br>
-                                SUNBURN<br>
-                                DUSSHERA<br>
-                                CHRISTMAS<br>
-                                DURGA PUJA<br>
-                                NEW YEAR
-            
-                            </div>
-                        </div>
-                    </div>
-                </div>  
-</div>
-</div>
-<div class="container text-center">    
-  <h3>UPCOMING FESTIVALS</h3><br>
-  <div class="row">
+      </div>
+    </div>
+  </div>
+  <div class="text-center">    
+    <h3>UPCOMING FESTIVALS</h3><br>
+    <div class="row">
     <div class="col-sm-4">
       <img src="pics srm/musicfestival1.jpg" class="img-responsive" style="width:100%" alt="Image">
       <p>Current Project</p>
@@ -161,8 +158,8 @@
     </div>
   </div>
 </div><br>
-
-<footer class="container-fluid text-center">
+</div>
+<footer class="footer text-center">
   <p>Copyrights Trouvaille</p>
 </footer>
 </body>

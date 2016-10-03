@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Durga Pooja</title>
+	<meta charset="utf-8">
+   	<base href="../">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="scripts/jquery.min.1.12.0.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="row">
+		<h1>Travel Plan</h1>
+	</div>
+	<center><div class="btn-group btn-group-lg text-center">
+  		<button type="button" id="plan" class="btn btn-primary length30">Plan</button>
+  		<button type="button" class="btn btn-danger length30">Skip</button>
+	</div></center>
+	<div id="plan-div">
+		<form>
+			<p>
+			Place: <br><input list="placeid" placeholder="Select The Place!">
+  				<datalist id="placeid">
+    				<option value="Kolkata">
+    				<option value="DurgaPur">
+  				</datalist>
+  			</p>
+  			<p>Type: <br><input type="radio" name="trasport"> Flight<input type="radio" name="trasport"> Train</p>
+			<p>One Side: <br><input type="text" name="from1" placeholder="From"></p>
+			<p>Return: <br><input type="text" name="to2" placeholder="To"></p>
+			<p>Date: <br><input type="date" name="date" ></p>
+			<p><input type="submit" name="detailsubmit" value="Go!" style="width: 150px;"></p>
+		</form>
+	</div>
+
+</body>
+</html>

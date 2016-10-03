@@ -5,8 +5,34 @@
 .length30{
 	width: 200px;
 	margin-right: 10px;
+	padding: 8px;
+	border-radius: 0;
 }
 #plan-div{
 	margin-top: 50px;
 	margin-left: 20px;
+}
+.form-div{
+	background-color: black;
+	opacity: .8;
+	color: white;
+	font-size: 18px;
+	margin: auto;
+	padding: 30px;
+}
+select{
+	color: black;
+	padding:8px;
+	border-radius: 0px;
+	margin: 0 35px 0 0;
+}
+input[type="submit"]{
+	width: 120px;
+	padding: 8px;
+	/*color: black;*/
+	background-color: green;
+	border: 0;
+}
+.heading{
+	font-size: 35px;
 }

@@ -29,10 +29,21 @@ select{
 input[type="submit"]{
 	width: 120px;
 	padding: 8px;
-	/*color: black;*/
 	background-color: green;
 	border: 0;
 }
 .heading{
 	font-size: 35px;
+}
+.hotel-content{
+	margin: 40px;
+}
+.hotel-content > .row{
+	background-color: white;
+	opacity: .8;
+	padding: 20px;
+}
+.hotel-content h3{
+	margin-top: 0;
+	/*padding-top: 0;*/
 }

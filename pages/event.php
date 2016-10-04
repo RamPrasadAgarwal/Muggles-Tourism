@@ -28,19 +28,19 @@ function redirect($url, $statusCode = 303)
 	<div class="row form-div">
 		<div class="col-md-3 heading">Hotel Plan</div>
 		<div class="col-md-7">
-			<form action="pages\eventt.php" method="GET">
-				Star: <select name="stars">
-  					<option value="5">5</option>
-  					<option value="4">4</option>
-  					<option value="3">3</option>
-  					<option value="2">2</option>
-  					<option value="1">1</option>
+			<form action="pages\event.php" method="GET">
+				Category: <select name="category">
+  					<option value="5">VVIP</option>
+  					<option value="4">VIP</option>
+  					<option value="3">GENERAL ARENA</option>
+  					<!-- <option value="2"></option> -->
+  					<!-- <option value="1">1</option> -->
 				</select>
 				Under: <select name="priceCat">
   					<option value="10000">Rs. 10000</option>
   					<option value="5000">Rs. 5000</option>
   					<option value="2000">Rs. 2000</option>
-  					<option value="1000">Rs. 1000</option>
+  					<!-- <option value="1000">Rs. 1000</option> -->
 				</select>
 				<input type="submit" name="submit-event" value="Go!">
 			</form>
@@ -50,9 +50,9 @@ function redirect($url, $statusCode = 303)
 		</div>
 	</div>
 	<?php
-	 $stars=$_GET["stars"];
+	 $category=$_GET["category"];
 	 $priceC=$_GET["priceCat"];
-	 $sql1="Select * from hotels where star = '".$stars."' and price between 0 and '".$priceC."'";
+	 $sql1="Select * from events where star = '".$stars."' and price between 0 and '".$priceC."'";
             $result1=$conn->query($sql1);
             while($row=mysqli_fetch_assoc($result1))
             {
@@ -61,7 +61,7 @@ function redirect($url, $statusCode = 303)
            /*$sql=" INSERT INTO user_event (`sl_no`, `event_name`, `event_id`, `hotel_id`, `travel_id`, `date1`) VALUES (NULL, '".$row["event_name"]."', NULL, NULL, NULL, NULL)";
              $result2=$conn->query($sql);*/
 	
-	echo "<div class="."hotel-content>
+	echo "<div class="."event-content>
 		<div class="."row".">
 			<div class="."col-md-2".">
 				<img src="."pics srm/lantern.jpg" ."width="."150px" ."height="."150px".">"

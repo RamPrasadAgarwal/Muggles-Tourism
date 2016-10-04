@@ -42,7 +42,7 @@ function redirect($url, $statusCode = 303)
 	</div></center>
 	<div id="plan-div">
 
-		<form action="trouvaille/travel.php" method="GET">
+		<form action="pages/travel.php" method="GET">
 
 			<p>
 			 Place: <br><input list="placeid" placeholder="Select The Place!" name="place"> 
@@ -95,10 +95,10 @@ function redirect($url, $statusCode = 303)
 
 
 <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
+   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
     
-      <!-- Modal content-->
+      <!-- Modal content -->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -124,11 +124,3 @@ function redirect($url, $statusCode = 303)
   </div>
 
 </body>
-<script type="text/javascript">
-	$(document).ready(function() {
-            $("submit-button").click(function(){
-                $("#myModal").modal();
-            });
-        });
-</script>
-</html>

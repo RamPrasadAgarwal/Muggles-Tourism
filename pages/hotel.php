@@ -28,7 +28,7 @@ function redirect($url, $statusCode = 303)
 	<div class="row form-div">
 		<div class="col-md-3 heading">Hotel Plan</div>
 		<div class="col-md-7">
-			<form action="pages\hotel.php" method="GET">
+			<form action="pages/hotel.php?id=1" method="GET">
 				Star: <select name="stars">
   					<option value="5">5</option>
   					<option value="4">4</option>
@@ -42,7 +42,7 @@ function redirect($url, $statusCode = 303)
   					<option value="2000">Rs. 2000</option>
   					<option value="1000">Rs. 1000</option>
 				</select>
-				<input type="submit" name="submit-event" value="Go!">
+				<input type="submit" name="submit-hotel" value="Go!">
 			</form>
 		</div>
 		<div class="col-md-2">
@@ -50,6 +50,9 @@ function redirect($url, $statusCode = 303)
 		</div>
 	</div>
 	<?php
+	//$_SESSION['txt']=$_GET['id'];
+	//if($_SESSION['txt']==0)
+	//{
 	 $stars=$_GET["stars"];
 	 $priceC=$_GET["priceCat"];
 	 $sql1="Select * from hotels where star = '".$stars."' and price between 0 and '".$priceC."'";
@@ -64,7 +67,7 @@ function redirect($url, $statusCode = 303)
 	echo "<div class="."hotel-content>
 		<div class="."row".">
 			<div class="."col-md-2".">
-				<img src="."srm pics/lantern.jpg" ."width="."150px" ."height="."150px".">"
+				<img src="."images/hotel/1.jpg" ."width="."150px" ."height="."150px".">"
 			."</div>
 			<div class="."col-md-10".">
 				<h3>
@@ -86,12 +89,14 @@ function redirect($url, $statusCode = 303)
 			</div>
 		</div>
 	</div>";
+
+//}
 }
 ?>
 </body>
 <style type="text/css">
 	body{
-		background-image: url(srm pics/lantern1-wall.jpg);
+		background-image: url(images/hotel-wall.jpg);
 		background-size: cover;
 	}
 </style>

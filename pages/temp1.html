@@ -1,0 +1,44 @@
+<div id="map" style="height: 300px; width: 300px;"></div>
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+
+var address = "chennai";
+
+var geocoder = new google.maps.Geocoder();
+var neighborhoods = [
+new google.maps.LatLng(12.8211467, 80.06666),
+new google.maps.LatLng(12.8629061, 80.15555),
+new google.maps.LatLng(12.897622, 80.13333),
+new google.maps.LatLng(12.97683, 80.12222),
+new google.maps.LatLng(12.92683, 80.1111)
+];
+var markers = [];
+geocoder.geocode( { "address": address }, function(results, status) {
+
+  if (status == google.maps.GeocoderStatus.OK) {
+    var myOptions = {
+      zoom: 9,
+      center: new google.maps.LatLng(12.824725341496067, 80.04703670552617),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map"), myOptions);
+    drop();
+
+    function drop() {
+ for (var i = 0; i < neighborhoods.length; i++) 
+  {
+    markers.push(new google.maps.Marker({
+    position: neighborhoods[i],
+    map: map,
+    }));
+  }
+}
+
+  } else {
+    try {
+      console.error("Geocode was not successful for the following reason: " + status);
+    } catch(e) {}
+  }
+});
+</script>

@@ -10,6 +10,29 @@
     <script type="text/javascript" src="scripts/jquery.min.1.12.0.js"></script>
     <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
     
+<script type="text/javascript">
+  function expand(){
+    if (document.getElementsByClassName('sym-name')[0].style.display == "inline-block"){
+      console.log("hello");
+      document.getElementById('sidebar').style.width = "60px";
+      expand1(1);
+    }
+    else {
+      console.log("hello!");
+      document.getElementById('sidebar').style.width = "150px";
+      setTimeout("expand1(0)",600);
+    };
+  };
+  function expand1(a){
+    if (a) {
+      document.getElementsByClassName('sym-name')[0].style.display = document.getElementsByClassName('sym-name')[1].style.display = document.getElementsByClassName('sym-name')[2].style.display = document.getElementsByClassName('sym-name')[3].style.display = document.getElementsByClassName('sym-name')[4].style.display = document.getElementsByClassName('sym-name')[5].style.display = document.getElementsByClassName('sym-name')[6].style.display = document.getElementsByClassName('sym-name')[7].style.display = document.getElementsByClassName('sym-name')[8].style.display = document.getElementsByClassName('sym-name')[9].style.display = document.getElementsByClassName('sym-name')[10].style.display = document.getElementsByClassName('sym-name')[11].style.display = "none";
+    }
+    else{
+      document.getElementsByClassName('sym-name')[0].style.display = document.getElementsByClassName('sym-name')[1].style.display = document.getElementsByClassName('sym-name')[2].style.display = document.getElementsByClassName('sym-name')[3].style.display = document.getElementsByClassName('sym-name')[4].style.display = document.getElementsByClassName('sym-name')[5].style.display = document.getElementsByClassName('sym-name')[6].style.display = document.getElementsByClassName('sym-name')[7].style.display = document.getElementsByClassName('sym-name')[8].style.display = document.getElementsByClassName('sym-name')[9].style.display = document.getElementsByClassName('sym-name')[10].style.display = document.getElementsByClassName('sym-name')[11].style.display = "inline-block";     
+    };
+  };
+</script>
+
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -34,8 +57,8 @@
       /*width:20px;*/
       /*line-height: 40px;*/
       /*font-weight: 40px; */
-    }
-  }
+    /* } */
+  /*}*/
   .footer{
     background-color:#ff8000;
     color:white;
@@ -52,13 +75,21 @@
 display:block;
 margin:auto;
 }
+body{
+  background-image: url("pics srm/11.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+}
   #wrapper
+}
 {
     /*border: 1px solid black;*/
     width: 900px;
     margin:20px auto;
     padding: 10px;
     text-align:left;
+    /*background-image:url("pics sr/m/9.jpg"); */
 }
 
 #sidebar{
@@ -113,34 +144,37 @@ margin:auto;
     </div>
 </nav>
         <br>
-      <div>
+      <!-- <div> -->
       <!-- <div class="row "> -->
-      <img src="pics srm/DURGA POOJA.png" id="banner"  alt="image"> 
+      <!-- <img src="pics srm/DURGA POOJA.png" id="banner"  alt="image">  -->
       <!-- </div> -->
-      </div> 
+      <!-- </div>  -->
       <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-2">
       <div style="height:800px;">
       <div id="sidebar">
         <div id="sidebar-symbol">
           <div class="row"><img src="pics srm/logo/list-logo.png" title="Expand" class="side-sym-size" onclick="expand()"></div>
-          <div class="row sb-opt"><img src="pics srm/logo/home-logo.png" title="Home" class="side-sym-size"><span class="sym-name">Home</span></div>
-          <div class="row sb-opt"><img src="pics srm/logo/read-logo.png" title="Read" class="side-sym-size"><span class="sym-name">Read</span></div>
-          <div class="row sb-opt"><img src="pics srm/logo/doubt-logo.png" title="Doubt" class="side-sym-size"><span class="sym-name">Doubt</span></div>
+          <div class="row sb-opt"><img src="pics srm/logo/home-logo.png" title="Home" class="side-sym-size"><span class="sym-name">Home</span></div> 
+          <div class="row sb-opt"><img src="pics srm/logo/read-logo.png" title="Read" class="side-sym-size"><span class="sym-name">Read</span></div> 
+          <div class="row sb-opt"><img src="pics srm/logo/doubt-logo.png" title="Doubt" class="side-sym-size"><span class="sym-name">FAQs</span></div>
           <div class="row sb-opt"><img src="pics srm/logo/memo-logo.png" title="Memories" class="side-sym-size"><span class="sym-name">Memories</span></div>
           <div class="row sb-opt"><img src="pics srm/logo/mates-logo.png" title="Mates" class="side-sym-size"><span class="sym-name">Mates</span></div>
-          <div class="row sb-opt"><img src="pics srm/logo/write-logo.png" title="Write" class="side-sym-size"><span class="sym-name">Write</span></div>
+          <div class="row sb-opt"><img src="pics srm/logo/write-logo.png" title="Write" class="side-sym-size"><span class="sym-name">Write Journal</span></div>
           <div class="row sb-opt"><img src="pics srm/logo/vote-logo.png" title="Vote" class="side-sym-size"><span class="sym-name">Vote</span></div>
-          <div class="row sb-opt"><img src="pics srm/logo/confess-logo.png" title="Confess" class="side-sym-size"><span class="sym-name">Confess</span></div>
-          <div class="row sb-opt"><img src="pics srm/logo/connect-logo.png" title="Connect" class="side-sym-size"><span class="sym-name">Connect</span></div>
-          <div class="row sb-opt"><img src="pics srm/logo/code-logo.png" title="Code" class="side-sym-size"><span class="sym-name">Code</span></div>
-          <div class="row sb-opt"><img src="pics srm/logo/upload-logo.png" title="Upload" class="side-sym-size"><span class="sym-name">Upload</span></div>
+          <div class="row sb-opt"><img src="pics srm/logo/connect-logo.png" title="Connect" class="side-sym-size"><span class="sym-name">Connect</span></div>      <div class="row sb-opt"><img src="pics srm/logo/upload-logo.png" title="Upload" class="side-sym-size"><span class="sym-name">Upload Journal
+          </span></div>
           <div class="row sb-opt"><img src="pics srm/logo/feed-logo.png" title="Feedback" class="side-sym-size"><span class="sym-name">Feedback</span></div>
         </div>
       </div>
     </div>
 </div>
-<div class="col-md-9">
+<div>
+      <!-- <div class="row "> -->
+      <img src="pics srm/DURGA POOJA.png" id="banner"  alt="image"> 
+      <!-- </div> -->
+      </div> 
+<div class="col-md-10">
     <!-- </div> -->
 <!-- </nav> -->
 <div id="wrapper">
@@ -176,31 +210,13 @@ margin:auto;
       <br><br>
     </div>
     </div>
+    </div>
   <!-- </div> -->
 <!-- </div> -->
 <!-- </div> -->
 <footer class="footer text-center">
-<span class="glyphicon glyphicon-copyright-mark"><bold>Copyrights Trouvaille</bold></span>
+<span class="glyphicon glyphicon-copyright-mark"> <bold>  Copyrights Trouvaille</bold></span>
 </footer>
 </body>
-<script type="text/javascript">
-  function expand(){
-    if (document.getElementsByClassName('sym-name')[0].style.display == "inline-block"){
-      document.getElementById('sidebar').style.width = "60px";
-      expand1(1);
-    }
-    else {
-      document.getElementById('sidebar').style.width = "150px";
-      setTimeout("expand1(0)",600);
-    };
-  }
-  function expand1(a){
-    if (a) {
-      document.getElementsByClassName('sym-name')[0].style.display = document.getElementsByClassName('sym-name')[1].style.display = document.getElementsByClassName('sym-name')[2].style.display = document.getElementsByClassName('sym-name')[3].style.display = document.getElementsByClassName('sym-name')[4].style.display = document.getElementsByClassName('sym-name')[5].style.display = document.getElementsByClassName('sym-name')[6].style.display = document.getElementsByClassName('sym-name')[7].style.display = document.getElementsByClassName('sym-name')[8].style.display = document.getElementsByClassName('sym-name')[9].style.display = document.getElementsByClassName('sym-name')[10].style.display = document.getElementsByClassName('sym-name')[11].style.display = "none";
-    }
-    else{
-      document.getElementsByClassName('sym-name')[1].style.display = document.getElementsByClassName('sym-name')[2].style.display = document.getElementsByClassName('sym-name')[3].style.display = document.getElementsByClassName('sym-name')[4].style.display = document.getElementsByClassName('sym-name')[5].style.display = document.getElementsByClassName('sym-name')[6].style.display = document.getElementsByClassName('sym-name')[7].style.display = document.getElementsByClassName('sym-name')[8].style.display = document.getElementsByClassName('sym-name')[9].style.display = document.getElementsByClassName('sym-name')[0].style.display = document.getElementsByClassName('sym-name')[10].style.display = document.getElementsByClassName('sym-name')[11].style.display = "inline-block";     
-    };
-  };
-</script>
+
 </html>

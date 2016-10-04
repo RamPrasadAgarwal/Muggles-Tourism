@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trouvaille || second page</title>
+  <meta charset="utf-8">
+   <base href="../">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--CAUTION: DO NOT EDIT THESE FILES. Offile Version of the above files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="scripts/jquery.min.1.12.0.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+  function expand(){
+    if (document.getElementsByClassName('sym-name')[0].style.display == "inline-block"){
+      console.log("hello");
+      document.getElementById('sidebar').style.width = "60px";
+      expand1(1);
+    }
+    else {
+      console.log("hello!");
+      document.getElementById('sidebar').style.width = "150px";
+      setTimeout("expand1(0)",600);
+    };
+  };
+  function expand1(a){
+    if (a) {
+      document.getElementsByClassName('sym-name')[0].style.display = document.getElementsByClassName('sym-name')[1].style.display = document.getElementsByClassName('sym-name')[2].style.display = document.getElementsByClassName('sym-name')[3].style.display = document.getElementsByClassName('sym-name')[4].style.display = document.getElementsByClassName('sym-name')[5].style.display = document.getElementsByClassName('sym-name')[6].style.display = document.getElementsByClassName('sym-name')[7].style.display = document.getElementsByClassName('sym-name')[8].style.display = document.getElementsByClassName('sym-name')[9].style.display = document.getElementsByClassName('sym-name')[10].style.display = document.getElementsByClassName('sym-name')[11].style.display = "none";
+    }
+    else{
+      document.getElementsByClassName('sym-name')[0].style.display = document.getElementsByClassName('sym-name')[1].style.display = document.getElementsByClassName('sym-name')[2].style.display = document.getElementsByClassName('sym-name')[3].style.display = document.getElementsByClassName('sym-name')[4].style.display = document.getElementsByClassName('sym-name')[5].style.display = document.getElementsByClassName('sym-name')[6].style.display = document.getElementsByClassName('sym-name')[7].style.display = document.getElementsByClassName('sym-name')[8].style.display = document.getElementsByClassName('sym-name')[9].style.display = document.getElementsByClassName('sym-name')[10].style.display = document.getElementsByClassName('sym-name')[11].style.display = "inline-block";     
+    };
+  };
+    </script>
+
+    <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+    }
+  body{
+    background-color: white;
+    }
+  .container{
+    background-color:white;
+    }
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  /*@media (max-width: 600px) {*/
+    /*.carousel-caption {*/
+      /*display: none;*/
+      /*width:20px;*/
+      /*line-height: 40px;*/
+      /*font-weight: 40px; */
+    /* } */
+  /*}*/
+    .footer{
+     background-color:#ff8000;
+     color:white;
+     font-weight:20px;
+     padding: 20px;
+    }
+    .navbar:hover{
+    /*opacity: 1;*/
+    background-color:#ffbf00;
+    color:black; 
+    }
+    #banner
+    {
+    display:block;
+    margin:auto;
+    }
+    body{
+    background-image: url("pics srm/kol.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    }
+    #wrapper
+    {
+    /*border: 1px solid black;*/
+    width: 900px;
+    margin:20px auto;
+    padding: 14px;
+    text-align:left;
+    /*background-image:url("pics sr/m/9.jpg"); */
+    }
+	#sidebar{
+	background-color:#4099ff;
+	width: 60px;
+	height: 100%;
+	opacity: .7;
+	position: relative;
+	 transition: width 1s; 
+	left: 0;
+	color: white;
+	font-size: 18px;
+	padding: 10px;
+    }
+   .side-sym-size{
+	width: 40px;
+	height: 40px;
+	padding: 5px;
+    }
+    .sym-name{
+	font-size: 15px;
+	padding: 5px;
+	font-family: sans-serif;
+	display: none;
+    } 
+    </style>
+    </head>
+ <body>   
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="#"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Festivals</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right"> -->
+         <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+      <!-- </ul> -->
+       </div>
+    </div>
+</nav>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-2">
+           <div id="sidebar">
+				<div id="sidebar-symbol">
+					<div class="row"><img src="pics srm/logo/list-logo.png" title="Expand" class="side-sym-size" onclick="expand()"></div>
+					<div class="row sb-opt"><img src="pics srm/logo/home-logo.png" title="Home" class="side-sym-size"><span class="sym-name">Home</span></div>
+					<div class="row sb-opt"><img src="pics srm/logo/read-logo.png" title="Read" class="side-sym-size"><span class="sym-name">Read</span></div>
+					<div class="row sb-opt"><img src="pics srm/logo/doubt-logo.png" title="Doubt" class="side-sym-size"><span class="sym-name">Doubt</span></div>
+					<div class="row sb-opt"><img src="pics srm/logo/memo-logo.png" title="Memories" class="side-sym-size"><span class="sym-name">Memories</span></div>
+					<div class="row sb-opt"><img src="pics srm/logo/mates-logo.png" title="Mates" class="side-sym-size"><span class="sym-name">Mates</span></div>
+					<div class="row sb-opt"><img src="pics srm/logo/write-logo.png" title="Write" class="side-sym-size"><span class="sym-name">Write</span></div>
+					<div class="row sb-opt"><img src="pics srm/logo/vote-logo.png" title="Vote" class="side-sym-size"><span class="sym-name">Vote</span></div>
+					<div class="row sb-opt"><img src="pics srm/logo/confess-logo.png" title="Confess" class="side-sym-size"><span class="sym-name">Confess</span></div>
+					<div class="row sb-opt"><img src="pics srm/logo/connect-logo.png" title="Connect" class="side-sym-size"><span class="sym-name">Connect</span></div>
+					<div class="row sb-opt"><img src="pics srm/logo/code-logo.png" title="Code" class="side-sym-size"><span class="sym-name">Code</span></div>
+					<div class="row sb-opt"><img src="pics srm/logo/upload-logo.png" title="Upload" class="side-sym-size"><span class="sym-name">Upload</span></div>
+					<div class="row sb-opt"><img src="pics srm/logo/feed-logo.png" title="Feedback" class="side-sym-size"><span class="sym-name">Feedback</span></div>
+				</div>
+	  		</div>
+	  	</div>
+	 <!-- </div> -->
+
+    <div>
+      <!-- <div class="row "> -->
+      <img src="pics srm/DURGA POOJA.png" id="banner"  alt="image"> 
+      <!-- </div> -->
+      </div>
+
+<div class="col-md-10">
+    <!-- </div> -->
+<!-- </nav> -->
+<div id="wrapper">
+      <div class="row">
+      <div class="col-md-3">
+      <p>felkrr fbrb gergrf rgerrreg ger eeegwr rgreg ergreg erger gergreger gre g re gre gre gerg </p>
+      </div>
+      <div class="col-md-5">
+      <img src="pics srm/6.jpg" class="img-responsive" style="height:250px;width:300px; display:block; margin:auto" alt="image"></div>
+      <div class="col-md-3">
+      <p>some text geg rgerg er eht hrt h rt htr j y j tyj  tyj tku kyu k yukyu</p></div>
+      </div>
+      <br><br>
+      <div class="row">
+      <div class="col-md-3">
+      <p>bvds fbekjbf fewbgweg regbreg rehbrh rehkerbh erherkjg </p></div>
+      <div class="col-md-5">
+      <img src="pics srm/untitled.png " class="img-responsive" style="height:250px;width:300px; display:block;margin:auto" alt="image"></div>
+      <div class="col-md-3">
+      <p>some text fwdf weger gre h th trh rt hrt h</p></div>
+      </div>
+      <br><br>
+      <div class="row">
+      <div class="col-md-3">
+      <p>cjsf afbuef ebfe geggbr gr br</p></div>
+      <div class="col-md-5">
+          <img src="pics srm/durgapuja2015.jpg" class="img-responsive" style="height:250px;width:300px; display:block;margin:auto" alt="image">
+          </div>
+            <div class="col-md-3">
+            <p>bk fbef egbw grwgb rgbr gr gre rhr r her hrehr herghreh erhreh reh re</p></div>
+  
+      </div>
+      <br><br>
+    </div>
+    </div>
+    </div>     
+
+
+</body>
+</html>

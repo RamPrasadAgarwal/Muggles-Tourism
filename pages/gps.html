@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Location</title>
+	<meta charset="utf-8">
+   	<base href="../">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="scripts/jquery.min.1.12.0.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var x = document.getElementById("demo");
+
+    			if (navigator.geolocation) {
+        			navigator.geolocation.watchPosition(showPosition);
+    			} else { 
+        			x.innerHTML = "Geolocation is not supported by this browser.";
+    			}
+    	});
+    
+		function showPosition(position) {
+    		var latitute = position.coords.latitude;
+    		var longitude = position.coords.longitude;
+    		distance(latitute,longitude);
+		}
+		function distance(latitude,longitude){
+			var eventlatitute = 23.545667;
+			var eventlongitude = 10.498745;
+			distance=Math.sqrt(Math.pow(Math.abs(eventlongitude- longitude),2)+Math.pow(Math.abs(latitude- eventlatitute),2));
+			document.getElementById('demo').innerHTML = distance;
+		}
+
+	</script>
+</head>
+<body>
+	<p id="demo"></p>
+
+
+</body>
+</html>

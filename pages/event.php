@@ -28,7 +28,7 @@ function redirect($url, $statusCode = 303)
 	<div class="row form-div">
 		<div class="col-md-3 heading">Hotel Plan</div>
 		<div class="col-md-7">
-			<form action="pages\hotel.php" method="GET">
+			<form action="pages\eventt.php" method="GET">
 				Star: <select name="stars">
   					<option value="5">5</option>
   					<option value="4">4</option>
@@ -64,7 +64,7 @@ function redirect($url, $statusCode = 303)
 	echo "<div class="."hotel-content>
 		<div class="."row".">
 			<div class="."col-md-2".">
-				<img src="."srm pics/lantern.jpg" ."width="."150px" ."height="."150px".">"
+				<img src="."pics srm/lantern.jpg" ."width="."150px" ."height="."150px".">"
 			."</div>
 			<div class="."col-md-10".">
 				<h3>
@@ -91,7 +91,7 @@ function redirect($url, $statusCode = 303)
 </body>
 <style type="text/css">
 	body{
-		background-image: url(srm pics/lantern1-wall.jpg);
+		background-image: url(pics srm/lantern1-wall.jpg);
 		background-size: cover;
 	}
 </style>
